@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function EveryWhere() {
-  return (<></>);
+  return (<> </>);
 }
 
 export const layout = {
