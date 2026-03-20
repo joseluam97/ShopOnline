@@ -6,7 +6,8 @@
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
-    "build": "evershop build",
+    "build": "npm run build:extensions && evershop build",
+    "build:extensions": "evershop extension:build sample",
     "dev": "evershop dev",
     "start:debug": "evershop start --debug",
     "user:create": "evershop user:create",
