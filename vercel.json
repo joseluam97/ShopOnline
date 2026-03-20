@@ -2,22 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "index.cjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/images/(.*)",
-      "dest": "/public/images/$1"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/.evershop/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
-    }
+    { "src": "/(.*)", "dest": "index.cjs" }
   ]
 }
