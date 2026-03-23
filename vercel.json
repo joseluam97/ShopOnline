@@ -2,23 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.cjs",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          ".evershop/**",
-          "extensions/**",
-          "themes/**",
-          "public/**",
-          "node_modules/@evershop/evershop/**"
-        ]
-      }
+      "src": "index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.cjs"
+      "dest": "index.js"
     }
   ]
 }
