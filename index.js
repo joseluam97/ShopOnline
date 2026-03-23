@@ -1,9 +1,7 @@
 import { startServer } from '@evershop/evershop';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import path from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// Forzamos la ruta al directorio raíz del proyecto en Vercel
+const rootDir = process.cwd();
 
-// Arrancamos el servidor
-startServer(__dirname);
+startServer(rootDir);
