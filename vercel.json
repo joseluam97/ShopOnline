@@ -3,7 +3,16 @@
   "builds": [
     {
       "src": "index.cjs",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          ".evershop/**",
+          "extensions/**",
+          "themes/**",
+          "public/**",
+          "node_modules/@evershop/evershop/**"
+        ]
+      }
     }
   ],
   "routes": [
