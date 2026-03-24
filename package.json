@@ -2,6 +2,7 @@
   "name": "my-evershop-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
