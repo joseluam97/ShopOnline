@@ -2,6 +2,9 @@
   "app": {
     "baseUrl": "https://shoponline-w5ga.onrender.com"
   },
+  "system": {
+    "baseUrl": "https://shoponline-w5ga.onrender.com"
+  },
   "shop": {
     "storeUrl": "https://shoponline-w5ga.onrender.com"
   }
