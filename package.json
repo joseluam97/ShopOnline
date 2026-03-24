@@ -5,7 +5,7 @@
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
-    "build": "mkdirp extensions/sample/dist themes/sample/dist && evershop theme:active sample && evershop build",
+    "build": "mkdir -p extensions/sample/dist themes/sample/dist && evershop theme:active sample && evershop build",
     "dev": "evershop dev",
     "start:debug": "evershop start --debug",
     "user:create": "evershop user:create",
