@@ -1,7 +1,8 @@
 {
   "shop": {
     "language": "en",
-    "currency": "USD"
+    "currency": "USD",
+    "homeUrl": "https://atlantika.onrender.com"
   },
   "system": {
     "extensions": [
