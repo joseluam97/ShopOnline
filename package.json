@@ -25,6 +25,10 @@
     "execa": "9.6.1",
     "typescript": "5.9.3"
   },
+  "workspaces": [
+    "extensions/*",
+    "themes/*"
+  ],
   "main": "index.js",
   "keywords": [],
   "author": "",
