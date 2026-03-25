@@ -2,11 +2,14 @@
   "name": "my-evershop-app",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "workspaces": [
+    "extensions/*",
+    "themes/*"
+  ],
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
-    "build": "mkdir -p extensions/sample/dist themes/sample/dist && evershop theme:active sample && evershop build",
+    "build": "mkdir -p extensions/sample/dist themes/sample/dist && evershop build",
     "dev": "evershop dev",
     "start:debug": "evershop start --debug",
     "user:create": "evershop user:create",
@@ -24,14 +27,5 @@
     "@types/react": "19.2.14",
     "execa": "9.6.1",
     "typescript": "5.9.3"
-  },
-  "workspaces": [
-    "extensions/*",
-    "themes/*"
-  ],
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
