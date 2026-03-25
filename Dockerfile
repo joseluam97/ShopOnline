@@ -17,7 +17,7 @@ COPY config ./config
 COPY public ./public
 
 # We must copy translations to the image as they are required for the build
-COPY translations ./translations
+#COPY translations ./translations
 
 # Run npm install.
 RUN npm install
