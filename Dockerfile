@@ -1,29 +1,24 @@
 FROM node:18-alpine
+
 WORKDIR /app
+
+# 1. Instalar versión actualizada de npm
 RUN npm install -g npm@9
-COPY package*.json .
-# Copy your custom theme.
-COPY themes ./themes
 
-# Copy your custom extensions.
-COPY extensions ./extensions
+# 2. Copiar TODOS los archivos de tu proyecto al contenedor
+COPY . .
 
-# Copy your config.
-COPY config ./config
+# 3. Borrar el candado antiguo para forzar la lectura de los workspaces
+RUN rm -f package-lock.json
 
-# DO NOT copy the media folder. It will be handled by a volume.
-
-# Copy your public files.
-COPY public ./public
-
-# We must copy translations to the image as they are required for the build
-#COPY translations ./translations
-
-# Run npm install.
+# 4. Instalar dependencias limpias (ahora sí enlazará el tema y la extensión)
 RUN npm install
 
-# Build assets.
+# 5. Compilar la tienda entera (Back + Front)
 RUN npm run build
 
-EXPOSE 80
+# 6. Exponer el puerto por defecto de Evershop
+EXPOSE 3000
+
+# 7. Encender el servidor
 CMD ["npm", "run", "start"]
