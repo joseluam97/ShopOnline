@@ -11,6 +11,8 @@ COPY . .
 # 3. Borrar el candado para los workspaces
 RUN rm -f package-lock.json
 
+ENV NODE_ENV=production
+
 # 4. Instalar TODAS las dependencias (incluidas las de desarrollo necesarias para compilar)
 RUN npm install
 
