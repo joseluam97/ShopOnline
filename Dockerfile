@@ -20,5 +20,5 @@ RUN NODE_ENV=production npm run build
 # 6. Exponer el puerto
 EXPOSE 3000
 
-# 7. Crear el usuario administrador y encender la tienda
-CMD sh -c "npx evershop user:create --email 'admin@atlantika.com' --password 'Admin1234567890' --name 'Admin' || true && npm run start"
+# 7. Encender la tienda
+CMD ["npm", "run", "start"]
