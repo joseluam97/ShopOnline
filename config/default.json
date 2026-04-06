@@ -7,11 +7,11 @@
   "system": {
     "extensions": [
       {
-        "name": "sample",
-        "resolve": "extensions/sample",
+        "name": "sample-extension",
+        "resolve": "extensions/sample-extension",
         "enabled": true
       }
     ],
-    "theme": "sample"
+    "theme": "sample-theme"
   }
 }

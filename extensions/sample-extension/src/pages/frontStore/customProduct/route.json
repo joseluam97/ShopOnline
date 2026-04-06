@@ -1,0 +1,6 @@
+{
+  "path": "/producto",
+  "methods": [
+    "GET"
+  ]
+}

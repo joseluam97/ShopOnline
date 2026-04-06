@@ -1,11 +1,17 @@
 {
-  "app": {
-    "baseUrl": "https://atlantika.onrender.com"
+  "shop": {
+    "language": "en",
+    "currency": "USD",
+    "homeUrl": "https://atlantika.onrender.com"
   },
   "system": {
-    "baseUrl": "https://atlantika.onrender.com"
-  },
-  "shop": {
-    "storeUrl": "https://atlantika.onrender.com"
+    "extensions": [
+      {
+        "name": "sample-extension",
+        "resolve": "extensions/sample-extension",
+        "enabled": true
+      }
+    ],
+    "theme": "sample-theme"
   }
 }

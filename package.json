@@ -2,6 +2,7 @@
   "name": "my-evershop-app",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "workspaces": [
     "extensions/*",
     "themes/*"
@@ -9,7 +10,7 @@
   "scripts": {
     "setup": "evershop install",
     "start": "evershop start",
-    "build": "mkdir -p extensions/sample/dist themes/sample/dist && evershop build",
+    "build": "rm -rf .evershop extensions/sample-extension/dist themes/sample-theme/dist && cd extensions/sample-extension && npx tsc && cp -R src/* dist/ && find dist -name '*.ts*' -type f | xargs rm -f && cd ../.. && cd themes/sample-theme && npx tsc && cp -R src/* dist/ && find dist -name '*.ts*' -type f | xargs rm -f && cd ../.. && evershop build",
     "dev": "evershop dev",
     "start:debug": "evershop start --debug",
     "user:create": "evershop user:create",
