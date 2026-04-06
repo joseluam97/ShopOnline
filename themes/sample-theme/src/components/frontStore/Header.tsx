@@ -1,7 +1,8 @@
 import Area from '@components/common/Area.js';
 import React from 'react';
 
-export default function Header() {
+// OJO: Es export function, SIN 'default' para que coincida con el núcleo de EverShop
+export function Header() {
   return (
     <header className="header bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
       <Area id="headerTop" className="header__top" />
@@ -39,8 +40,4 @@ export default function Header() {
     </header>
   );
 }
-
-export const layout = {
-  areaId: 'wrapper',
-  sortOrder: 1,
-};
+// ¡Y NADA MÁS! Ni layout ni nada.
