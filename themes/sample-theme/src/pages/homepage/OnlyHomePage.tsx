@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from '../../components/ProductCard.jsx'; // Importamos nuestro componente reusable
+import ProductCard from './ProductCard.jsx'; // Importamos nuestro componente reusable
 
 export default function OnlyHomePage() {
   // 1. Estados para manejar los datos
