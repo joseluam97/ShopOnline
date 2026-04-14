@@ -4,7 +4,6 @@ WORKDIR /app
 
 RUN npm install -g npm@9
 COPY . .
-RUN rm -f package-lock.json
 RUN npm install
 
 # 1. Creamos la carpeta 'dist' vacía que Evershop exige en Producción
