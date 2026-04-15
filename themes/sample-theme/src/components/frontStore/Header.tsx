@@ -29,7 +29,7 @@ export function Header() {
             {/* Navegación Desktop (Oculta en móvil, se muestra a partir de pantallas grandes) */}
             <nav className="hidden lg:flex gap-6 xl:gap-8 font-semibold text-xs xl:text-sm text-gray-700 items-center">
               <a href="/all-products" className="hover:text-teal-700 transition whitespace-nowrap">OBRAS EN STOCK</a>
-              <a href="/commissioned-works" className="hover:text-teal-700 transition whitespace-nowrap">OBRAS POR ENCARGO</a>
+              <a href="/obras-por-encargo" className="hover:text-teal-700 transition whitespace-nowrap">OBRAS POR ENCARGO</a>
               
               {/* DESPLEGABLE: Joyería */}
               <div className="relative group py-4">
