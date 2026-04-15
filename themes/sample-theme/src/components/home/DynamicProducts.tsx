@@ -6,7 +6,7 @@ export default function DynamicProducts({ items }: { items: any[] }) {
     <section className="py-20 px-6 max-w-screen-2xl mx-auto">
       <div className="flex justify-between items-end mb-12 border-b border-gray-200 pb-4">
         <h2 className="text-3xl font-serif text-teal-900">Productos Atlantika</h2>
-        <a href="/category/all" className="bg-teal-900 text-white px-6 py-2 text-xs tracking-widest uppercase hover:bg-teal-800 transition">
+        <a href="/all-products" className="bg-teal-900 text-white px-6 py-2 text-xs tracking-widest uppercase hover:bg-teal-800 transition">
           Ver Todo
         </a>
       </div>

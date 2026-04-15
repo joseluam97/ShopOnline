@@ -20,7 +20,7 @@ export default function HeroSection() {
           Arte en Resina
         </h1>
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-          <a href="/category/cursos" className="border border-white px-10 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition duration-300">
+          <a href="/all-products" className="border border-white px-10 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition duration-300">
             VER OBRAS EN STOCK
           </a>
           {/*<a href="/category/materiales" className="border border-white px-10 py-3 text-sm tracking-widest hover:bg-white hover:text-black transition duration-300">

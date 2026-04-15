@@ -9,7 +9,7 @@ export default function PromoBanner() {
       <div className="relative z-10 text-white px-4">
         <p className="uppercase tracking-[0.2em] text-xs mb-4">Vuelve a conectar con el océano</p>
         <h2 className="text-4xl md:text-5xl font-serif mb-8">La Magia del Mar en tu Hogar</h2>
-        <a href="/category/obras" className="bg-white text-teal-900 px-8 py-3 text-sm font-bold tracking-widest hover:bg-gray-100 transition">
+        <a href="/all-products" className="bg-white text-teal-900 px-8 py-3 text-sm font-bold tracking-widest hover:bg-gray-100 transition">
           VER OBRAS DISPONIBLES
         </a>
       </div>
