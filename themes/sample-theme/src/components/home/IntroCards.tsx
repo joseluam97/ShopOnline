@@ -10,7 +10,7 @@ export default function IntroCards() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
           { title: 'Conoce mi historia', btn: 'SOBRE MÍ' },
-          { title: 'Aprende conmigo', btn: 'CURSOS ONLINE' },
+          { title: 'Haz tu encargo', btn: 'PEDIDO' },
           { title: 'Decora tu hogar', btn: 'OBRAS ORIGINALES' }
         ].map((card, i) => (
           <div key={i} className="group relative h-96 overflow-hidden rounded-sm cursor-pointer">
